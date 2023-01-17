@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="refresh" content="5">
+     <meta name="keyword" content="Bio Data, Data Diri">
+     <meta name="author" content="Rizal Kurnia">
+     <link rel="stylesheet" href="style.css">
+     <link rel="icon" href="PUBLIC_URL/favicon.png">
+     <title>erzplays</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="logo">ERZ</h1>
+        <nav>
+            <ul>
+                <li><a onclick="reload()" id="home">HOME</a></li>
+                <li><a href="https://twitter.com/erzplays">ABOUT</a></li>
+                <li><a href="https://api.whatsapp.com/send/?phone=6282264688835&text&type=phone_number&app_absent=0">CONTACT</a></li>
+            </ul>
+            <button onclick="redirInsta()" class="btn-flw">FOLLOW ME </button>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="intro">
+            <p class="title">Hello, I'm Rizal Kurnia.</p>
+            <p class="description">Student on Semarang University.</p>
+            <img src="/assets/poto1.jpg" alt="poto2.jpg" class="img-foto">
+        </div>
+    </div>
+    <div class="parallax">
+        <div class="about">
+            <p class="title">Saya adalah Mahhasiswa Teknik Informatika.</p>
+            <p class="description">Tahu dulu, bisanya belakangan.</p>
+            <hr>
+            <p class="description">Saya suka ngopi,</p>
+            <p class="description">Untuk mencari inspirasi.</p>
+        </div>
+        <button class="btn-flw" onclick="redirWhatsapp()">My Contact</button>
+    </div>
+    <div class="container">
+        <div class="card">
+            <div class="card-item icon">
+                <img src="/assets/rating.png" width="75px" height="75px">
+                <p>Send your feedback to "My Contact"</p>
+            </div>
+            <div class="card-item icon">
+                <img src="/assets/rating.png" width="75px" height="75px">
+                <p>Send your feedback to "My Contact"</p>
+            </div>
+            <div class="card-item icon">
+                <img src="/assets/rating.png" width="75px" height="75px">
+                <p>Send your feedback to "My Contact"</p>
+            </div>
+    </div>
+    <script>
+        function reload(){
+            location.reload()
+        }
+         function redirInsta(){
+            window.location.href = "https://www.instagram.com/totongnnbbnn/"
+         }
+         function redirWhatsapp(){
+            window.location.href = "https://api.whatsapp.com/send/?phone=6282264688835&text&type=phone_number&app_absent=0"
+         }
+    </script>
+</body>
+</html>
